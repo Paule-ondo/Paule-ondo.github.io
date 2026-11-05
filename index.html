@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paule Ondo – Portfolio</title>
+  <meta name="description" content="Portfolio de Paule Ondo, étudiante en cycle préparatoire informatique à HESTIM School, Casablanca.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#accueil">Paule Ondo</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">Menu</button>
+    <nav id="nav" class="nav">
+      <a href="#apropos">À propos</a>
+      <a href="#competences">Compétences</a>
+      <a href="#projets">Projets</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-btn" id="themeBtn" aria-label="Changer de thème">Mode sombre</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-text">
+        <p class="hero-tag">Étudiante en informatique · HESTIM School, Casablanca</p>
+        <h1>Paule Ondo</h1>
+        <div class="terminal" aria-live="polite">
+          <span class="prompt">&gt;</span>
+          <span id="typed"></span><span class="cursor"></span>
+        </div>
+        <div class="hero-actions">
+          <a class="btn" href="#projets">Voir mes projets</a>
+          <a class="btn btn-ghost" href="#contact">Me contacter</a>
+        </div>
+      </div>
+      <svg class="flower" viewBox="0 0 400 400" aria-hidden="true">
+        <defs>
+          <radialGradient id="petalGrad" cx="200" cy="200" r="175" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#ecd9a0"/>
+            <stop offset="0.2" stop-color="#e2a38f"/>
+            <stop offset="0.5" stop-color="#c4527c"/>
+            <stop offset="1" stop-color="#a63363"/>
+          </radialGradient>
+        </defs>
+        <path class="petal" style="--r:0deg;--d:0s" d="M200 200C156 150 158 66 200 24C242 66 244 150 200 200Z"/>
+        <path class="petal" style="--r:60deg;--d:.12s" d="M200 200C160 156 162 86 200 52C238 86 240 156 200 200Z"/>
+        <path class="petal" style="--r:120deg;--d:.24s" d="M200 200C156 150 158 66 200 24C242 66 244 150 200 200Z"/>
+        <path class="petal" style="--r:180deg;--d:.36s" d="M200 200C160 156 162 86 200 52C238 86 240 156 200 200Z"/>
+        <path class="petal" style="--r:240deg;--d:.48s" d="M200 200C156 150 158 66 200 24C242 66 244 150 200 200Z"/>
+        <path class="petal" style="--r:300deg;--d:.6s" d="M200 200C160 156 162 86 200 52C238 86 240 156 200 200Z"/>
+        <g class="stamens">
+          <line x1="200" y1="200" x2="262" y2="140"/>
+          <line x1="200" y1="200" x2="226" y2="114"/>
+          <line x1="200" y1="200" x2="278" y2="184"/>
+          <line x1="200" y1="200" x2="172" y2="126"/>
+          <ellipse cx="266" cy="136" rx="5" ry="13" transform="rotate(45 266 136)"/>
+          <ellipse cx="226" cy="110" rx="5" ry="13" transform="rotate(8 226 110)"/>
+          <ellipse cx="282" cy="183" rx="5" ry="13" transform="rotate(75 282 183)"/>
+          <circle class="pistil" cx="172" cy="124" r="6"/>
+        </g>
+      </svg>
+    </section>
+
+    <section id="apropos">
+      <h2>À propos</h2>
+      <div class="about">
+        <p>Je suis en première année de cycle préparatoire informatique à HESTIM School, à Casablanca. J'apprends à programmer, à structurer un raisonnement et à construire des choses qui fonctionnent.</p>
+        <p>Ce portfolio rassemble ce que j'ai appris et réalisé. Je cherche un stage et des projets où progresser avec une équipe.</p>
+      </div>
+    </section>
+
+    <section id="competences">
+      <h2>Compétences</h2>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Git &amp; GitHub</li>
+        <li>Algorithmique</li>
+      </ul>
+    </section>
+
+    <section id="projets">
+      <h2>Projets</h2>
+      <div class="projects">
+        <article class="project">
+          <h3>Ce portfolio</h3>
+          <p>Mon site personnel, écrit à la main en HTML, CSS et JavaScript.</p>
+          <p class="stack">HTML · CSS · JavaScript</p>
+          <a href="https://github.com/" target="_blank" rel="noopener">Voir le code sur GitHub</a>
+        </article>
+        <article class="project">
+          <h3>Projet 2</h3>
+          <p>Décris ici un projet de cours : le problème, ta solution, ce que tu as appris.</p>
+          <p class="stack">Python</p>
+          <a href="https://github.com/" target="_blank" rel="noopener">Voir le code sur GitHub</a>
+        </article>
+        <article class="project">
+          <h3>Projet 3</h3>
+          <p>Ajoute un autre projet, même petit : une calculatrice, un jeu, un mini-site.</p>
+          <p class="stack">JavaScript</p>
+          <a href="https://github.com/" target="_blank" rel="noopener">Voir le code sur GitHub</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="contact-intro">Une question, une opportunité de stage ? Écris-moi.</p>
+      <form id="contactForm" class="form">
+        <label>Nom
+          <input type="text" id="name" required>
+        </label>
+        <label>Votre e-mail
+          <input type="email" id="email" required>
+        </label>
+        <label>Message
+          <textarea id="message" rows="5" required></textarea>
+        </label>
+        <button class="btn" type="submit">Envoyer le message</button>
+        <p id="formStatus" class="form-status" role="status"></p>
+      </form>
+      <p class="links">
+        <a href="https://www.linkedin.com/in/paule-ondo-69a060442/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Paule Ondo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
